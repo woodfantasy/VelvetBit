@@ -15,7 +15,10 @@ const Manifesto: React.FC = () => {
           <span className="text-white/40">"</span>
           We believe technology should feel like velvet, not steel. 
           In a binary world of 0s and 1s, we are here for the 
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-300"> infinite gray </span> 
+          <br className="hidden md:block" />
+          <span className="relative inline-block mx-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-200 via-white to-pink-200 animate-pulse font-medium drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]">
+             infinite gray 
+          </span> 
           in between.
           <span className="text-white/40">"</span>
         </motion.blockquote>
@@ -24,7 +27,7 @@ const Manifesto: React.FC = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="block mt-8 font-sans text-sm uppercase tracking-[0.2em] text-white/50 not-italic"
+          className="block mt-10 font-sans text-sm uppercase tracking-[0.3em] text-white/50 not-italic"
         >
           — VelvetBit
         </motion.cite>

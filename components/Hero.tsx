@@ -11,15 +11,15 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 text-center">
+    <section className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 text-center pt-20">
       {/* Pulsing Velvet Heart */}
       <motion.div 
         className="relative w-64 h-64 md:w-96 md:h-96 mb-12"
-        animate={{ scale: [1, 1.05, 1] }}
-        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+        animate={{ scale: [1, 1.03, 1] }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       >
         {/* Glow behind heart */}
-        <div className="absolute inset-0 bg-rose-500/20 blur-[60px] rounded-full" />
+        <div className="absolute inset-0 bg-rose-500/20 blur-[80px] rounded-full" />
         
         {/* Abstract 3D Heart Shape using SVG */}
         <svg viewBox="0 0 200 200" className="w-full h-full drop-shadow-2xl">
@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tight text-white/90 drop-shadow-lg mb-4"
+        className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tight text-white drop-shadow-lg mb-6"
       >
         Embrace Your Shadows.
       </motion.h1>
@@ -66,9 +66,9 @@ const Hero: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
-        className="font-sans text-lg md:text-xl text-white/60 max-w-xl mx-auto mb-16 leading-relaxed"
+        className="font-sans text-xl md:text-2xl text-slate-200 max-w-2xl mx-auto mb-16 leading-relaxed font-light"
       >
-        VelvetBit creates digital sanctuaries for the modern soul. <br/>
+        VelvetBit creates digital sanctuaries for the modern soul. <br className="hidden md:block"/>
         Soft tech, deep feelings, and a little bit of magic.
       </motion.p>
 
@@ -78,7 +78,7 @@ const Hero: React.FC = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1.2 }}
         whileHover={{ scale: 1.05 }}
-        className="group flex flex-col items-center gap-2 text-sm uppercase tracking-widest text-white/40 hover:text-white transition-colors"
+        className="group flex flex-col items-center gap-2 text-sm uppercase tracking-widest text-white/50 hover:text-white transition-colors"
       >
         Explore Our World
         <motion.div
