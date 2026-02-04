@@ -34,7 +34,7 @@ const App: React.FC = () => {
             title="Mood Bartender"
             tagline="Alchemy for your emotions."
             copy="Turn your heavy days into intoxicating art. Whether you are doing shadow work or just venting, we turn your feelings into bespoke cocktails. A safe space to unravel."
-            imageSrc="https://raw.githubusercontent.com/woodfantasy/VelvetBit/refs/heads/main/IMG_6660.jpg?token=GHSAT0AAAAAADT3NGHMZCGHATIKUWY5NQTK2MCYTDQ"
+            imageSrc="https://raw.githubusercontent.com/woodfantasy/VelvetBit/refs/heads/main/IMG_6660.jpg"
             accentColor="#A78BFA" // Neon Lilac
             downloadUrl="https://apps.apple.com/app/id6757968626"
             visualType="phone"
@@ -45,7 +45,7 @@ const App: React.FC = () => {
             title="Numi"
             tagline="Your glowing companion in the dark."
             copy="A virtual pet soft enough to hold your heart. Inspired by the comfort of plush toys, Numi is here to listen, to be squished, and to keep you company when the world feels too loud."
-            imageSrc="https://raw.githubusercontent.com/woodfantasy/VelvetBit/refs/heads/main/IMG_6663.jpg?token=GHSAT0AAAAAADT3NGHME6XHE2QIGJPZR5SI2MCYUHA"
+            imageSrc="https://raw.githubusercontent.com/woodfantasy/VelvetBit/refs/heads/main/IMG_6663.jpg"
             accentColor="#FFD28E" // Brighter Glowing Peach/Gold
             downloadUrl="https://apps.apple.com/app/id6758260608"
             isReversed={true}

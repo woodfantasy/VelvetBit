@@ -91,7 +91,7 @@ const AppShowcase: React.FC<AppShowcaseProps> = ({
             rel="noopener noreferrer"
             className="group relative inline-flex items-center gap-3 px-5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(168,85,247,0.3)] shadow-[0_0_15px_rgba(168,85,247,0.1)]"
           >
-             <svg className="w-8 h-8 fill-white" viewBox="0 0 384 512">
+             <svg className="w-8 h-8 fill-current text-white" viewBox="0 0 384 512">
                <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 46.9 126.7 89.8 126.7 19.6 0 31.4-14.4 61.2-14.4 29.6 0 41.6 14.4 60.2 14.4 41 0 54.1-66.5 82.8-121.4 16.6-31.1 25.1-64.5 27.5-66.7-1.4-1.2-4.5-3.3-21.2-4.6zM222 72.1c16.3-21.9 33.7-49.1 29.8-82.5-30.8 2.9-63.6 23.4-83.3 47.7-17.7 21.6-31 52.8-27.4 82.5 33.7 2.3 64.7-25.2 80.9-47.7z"/>
              </svg>
              <div className="flex flex-col items-start">
