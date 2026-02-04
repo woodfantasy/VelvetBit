@@ -45,7 +45,7 @@ const App: React.FC = () => {
             title="Numi"
             tagline="Your glowing companion in the dark."
             copy="A virtual pet soft enough to hold your heart. Inspired by the comfort of plush toys, Numi is here to listen, to be squished, and to keep you company when the world feels too loud."
-            imageSrc="https://github.com/woodfantasy/VelvetBit/blob/main/IMG_6663.jpg?raw=true"
+            imageSrc="https://raw.githubusercontent.com/woodfantasy/VelvetBit/refs/heads/main/IMG_6663.jpg?token=GHSAT0AAAAAADT3NGHME6XHE2QIGJPZR5SI2MCYUHA"
             accentColor="#FFD28E" // Brighter Glowing Peach/Gold
             downloadUrl="https://apps.apple.com/app/id6758260608"
             isReversed={true}
