@@ -34,7 +34,7 @@ const App: React.FC = () => {
             title="Mood Bartender"
             tagline="Alchemy for your emotions."
             copy="Turn your heavy days into intoxicating art. Whether you are doing shadow work or just venting, we turn your feelings into bespoke cocktails. A safe space to unravel."
-            imageSrc="https://github.com/woodfantasy/VelvetBit/blob/main/IMG_6660.jpg?raw=true"
+            imageSrc="https://raw.githubusercontent.com/woodfantasy/VelvetBit/refs/heads/main/IMG_6660.jpg?token=GHSAT0AAAAAADT3NGHMZCGHATIKUWY5NQTK2MCYTDQ"
             accentColor="#A78BFA" // Neon Lilac
             downloadUrl="https://apps.apple.com/app/id6757968626"
             visualType="phone"
