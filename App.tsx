@@ -34,7 +34,7 @@ const App: React.FC = () => {
             title="Mood Bartender"
             tagline="Alchemy for your emotions."
             copy="Turn your heavy days into intoxicating art. Whether you are doing shadow work or just venting, we turn your feelings into bespoke cocktails. A safe space to unravel."
-            imageSrc="/IMG_6660.jpg"
+            imageSrc="https://github.com/woodfantasy/VelvetBit/blob/main/IMG_6660.jpg?raw=true"
             accentColor="#A78BFA" // Neon Lilac
             downloadUrl="https://apps.apple.com/app/id6757968626"
             visualType="phone"
@@ -45,7 +45,7 @@ const App: React.FC = () => {
             title="Numi"
             tagline="Your glowing companion in the dark."
             copy="A virtual pet soft enough to hold your heart. Inspired by the comfort of plush toys, Numi is here to listen, to be squished, and to keep you company when the world feels too loud."
-            imageSrc="/woodfantasy/VelvetBit/blob/main/IMG_6663.jpg"
+            imageSrc="https://github.com/woodfantasy/VelvetBit/blob/main/IMG_6663.jpg?raw=true"
             accentColor="#FFD28E" // Brighter Glowing Peach/Gold
             downloadUrl="https://apps.apple.com/app/id6758260608"
             isReversed={true}
