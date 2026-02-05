@@ -12,45 +12,31 @@ const Hero: React.FC = () => {
 
   return (
     <section className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 text-center pt-20">
-      {/* Pulsing Velvet Heart */}
+      {/* Living Velvet Heart */}
       <motion.div 
-        className="relative w-64 h-64 md:w-96 md:h-96 mb-12"
-        animate={{ scale: [1, 1.03, 1] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        className="relative mb-12"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       >
-        {/* Glow behind heart */}
-        <div className="absolute inset-0 bg-rose-500/20 blur-[80px] rounded-full" />
-        
-        {/* Abstract 3D Heart Shape using SVG */}
-        <svg viewBox="0 0 200 200" className="w-full h-full drop-shadow-2xl">
-          <defs>
-            <radialGradient id="velvetGradient" cx="30%" cy="30%" r="70%">
-              <stop offset="0%" stopColor="#9f1239" /> {/* Rose 800 */}
-              <stop offset="60%" stopColor="#4c0519" /> {/* Rose 950 */}
-              <stop offset="100%" stopColor="#2a0a18" /> {/* Darker */}
-            </radialGradient>
-            <filter id="noiseFilter">
-              <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" stitchTiles="stitch" />
-              <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.5 0" />
-              <feBlend mode="multiply" in2="SourceGraphic" />
-            </filter>
-            <filter id="innerGlow">
-                <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
-                <feOffset dx="0" dy="2" result="offsetBlur"/>
-                <feSpecularLighting in="blur" surfaceScale="5" specularConstant=".75" specularExponent="20" lightingColor="#ff99aa" result="specOut">
-                    <fePointLight x="-5000" y="-10000" z="20000"/>
-                </feSpecularLighting>
-                <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut"/>
-                <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint"/>
-            </filter>
-          </defs>
-          <path 
-            d="M100 180 C 20 100, 0 50, 50 20 C 80 5, 100 30, 100 30 C 100 30, 120 5, 150 20 C 200 50, 180 100, 100 180 Z" 
-            fill="url(#velvetGradient)"
-            filter="url(#innerGlow)"
-            className="drop-shadow-lg"
-          />
-        </svg>
+        <motion.img 
+          src="https://raw.githubusercontent.com/woodfantasy/VelvetBit/refs/heads/main/logo.png"
+          alt="VelvetBit Heart"
+          className="w-64 md:w-96 h-auto object-contain mix-blend-screen"
+          animate={{
+            scale: [1, 1.05, 1],
+            filter: [
+              "drop-shadow(0 0 30px rgba(220, 20, 60, 0.5))", // Resting state: softer, deeper red
+              "drop-shadow(0 0 60px rgba(255, 50, 80, 0.8))", // Inhale state: brighter, intense glow
+              "drop-shadow(0 0 30px rgba(220, 20, 60, 0.5))"  // Return to rest
+            ]
+          }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        />
       </motion.div>
 
       <motion.h1 
